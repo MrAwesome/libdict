@@ -35,8 +35,8 @@ use std::collections::HashMap;
 /// about the details of the index and the underlying dict format.
 /// For an example, please see the [crate documentation](index.html).
 pub struct Dictionary {
-    dict_reader: Box<dyn DictReader>,
-    word_index: HashMap<String, (u64, u64)>
+    pub dict_reader: Box<dyn DictReader>,
+    pub word_index: HashMap<String, (u64, u64)>
 }
 
 impl Dictionary {
